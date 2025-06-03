@@ -5,13 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Startup Studio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-scroll {
+      display: flex;
+      width: 200%;
+      animation: scroll 20s linear infinite;
+    }
+  </style>
 </head>
 <body class="bg-black text-white font-sans">
+  <!-- Hero Section -->
   <section class="h-screen w-full flex items-center justify-center text-center px-6">
     <div>
       <h1 class="text-4xl md:text-6xl font-bold mb-4">We Build Companies That Redefine the Future</h1>
       <p class="text-lg md:text-xl text-gray-300">A startup studio crafting bold ventures from zero to one</p>
     </div>
   </section>
+
+  <!-- Image Carousel -->
+  <div class="mt-12 max-w-6xl mx-auto overflow-hidden relative py-8">
+    <div class="animate-scroll gap-6">
+      <!-- First set of logos -->
+      <img src="https://via.placeholder.com/300x150" class="rounded-lg shadow-lg" alt="Brand 1" />
+      <img src="https://via.placeholder.com/300x150" class="rounded-lg shadow-lg" alt="Brand 2" />
+      <img src="https://via.placeholder.com/300x150" class="rounded-lg shadow-lg" alt="Brand 3" />
+      <!-- Duplicate set of logos for seamless scroll -->
+      <img src="https://via.placeholder.com/300x150" class="rounded-lg shadow-lg" alt="Brand 1" />
+      <img src="https://via.placeholder.com/300x150" class="rounded-lg shadow-lg" alt="Brand 2" />
+      <img src="https://via.placeholder.com/300x150" class="rounded-lg shadow-lg" alt="Brand 3" />
+    </div>
+  </div>
 </body>
 </html>
