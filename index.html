@@ -5,46 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Introspekt Startup Studio</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    @keyframes scroll {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-    .animate-scroll {
-      display: flex;
-      animation: scroll 40s linear infinite;
-      width: max-content;
-    }
-  </style>
 </head>
 <body class="bg-white text-black font-sans">
   <!-- Navigation/Header -->
   <header class="w-full px-8 py-6 flex items-center justify-between max-w-7xl mx-auto">
-    <img src="https://raw.githubusercontent.com/introspektkevin/introspekt.com/main/logo.png" alt="Logo" class="h-16 w-auto" />
+    <img
+      src="https://raw.githubusercontent.com/introspektkevin/introspekt.com/main/logo.png"
+      alt="Logo"
+      class="h-16 w-auto"
+    />
   </header>
 
   <!-- Hero Section -->
   <section class="w-full px-8 pb-16">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between md:items-center gap-12">
+    <div class="max-w-7xl mx-auto">
       <div class="max-w-xl">
-        <h1 class="text-4xl md:text-6xl font-semibold leading-tight mb-6">ICONIC BRANDS BUILT FROM ZERO</h1>
-        <p class="text-lg md:text-xl text-gray-600">We're a brand factory crafting bold ventures from scratch. Design-led, speed-driven, AI first.</p>
+        <h1 class="text-4xl md:text-6xl font-semibold leading-tight mb-6">
+          ICONIC BRANDS BUILT FROM ZERO
+        </h1>
+        <p class="text-lg md:text-xl text-gray-600">
+          We're a brand factory crafting bold ventures from scratch. Design-led, speed-driven, AI first.
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- Scrolling Brand Carousel -->
-  <section class="overflow-hidden py-4">
-    <div class="max-w-full mx-auto">
-      <div class="animate-scroll gap-8 flex items-center px-8">
-        <img src="https://raw.githubusercontent.com/introspektkevin/introspekt.com/main/BRAND1.png" alt="Brand 1" class="h-[450px] w-[450px] rounded-2xl shadow-md object-cover" />
-        <img src="https://raw.githubusercontent.com/introspektkevin/introspekt.com/main/BRAND2.png" alt="Brand 2" class="h-[450px] w-[450px] rounded-2xl shadow-md object-cover" />
-        <img src="https://raw.githubusercontent.com/introspektkevin/introspekt.com/main/BRAND3.png" alt="Brand 3" class="h-[450px] w-[450px] rounded-2xl shadow-md object-cover" />
-        <img src="https://raw.githubusercontent.com/introspektkevin/introspekt.com/main/BRAND4.png" alt="Brand 4" class="h-[450px] w-[450px] rounded-2xl shadow-md object-cover" />
-        <img src="https://raw.githubusercontent.com/introspektkevin/introspekt.com/main/BRAND5.png" alt="Brand 5" class="h-[450px] w-[450px] rounded-2xl shadow-md object-cover" />
-        <img src="https://raw.githubusercontent.com/introspektkevin/introspekt.com/main/BRAND6.png" alt="Brand 6" class="h-[450px] w-[450px] rounded-2xl shadow-md object-cover" />
-        <img src="https://raw.githubusercontent.com/introspektkevin/introspekt.com/main/BRAND7.png" alt="Brand 7" class="h-[450px] w-[450px] rounded-2xl shadow-md object-cover" />
-
+  <!-- Static Brand Grid -->
+  <section class="px-8 pb-24">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <img
+          src="https://raw.githubusercontent.com/introspektkevin/introspekt.com/main/BRAND1.png"
+          alt="Brand 1"
+          class="w-full aspect-square rounded-2xl shadow-md object-cover"
+        />
+        <img
+          src="https://raw.githubusercontent.com/introspektkevin/introspekt.com/main/BRAND2.png"
+          alt="Brand 2"
+          class="w-full aspect-square rounded-2xl shadow-md object-cover"
+        />
+        <img
+          src="https://raw.githubusercontent.com/introspektkevin/introspekt.com/main/BRAND3.png"
+          alt="Brand 3"
+          class="w-full aspect-square rounded-2xl shadow-md object-cover"
+        />
       </div>
     </div>
   </section>
